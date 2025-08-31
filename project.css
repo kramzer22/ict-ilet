@@ -72,118 +72,98 @@ nav img {
 
 .article {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.article-bg {
-  grid-column: 1/4;
-  grid-row: 1/4;
-  width: 100%;
-}
-
-.container-logo {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  padding-top: 2em;
-  padding-left: 0.5em;
-}
-
-.hero-logo {
-  height: 5em;
-  width: 5em;
-}
-
-.hero-header {
-  grid-column: 1/4;
-  grid-row: 2/3;
-  font-family: Arial, "Orbitron", Helvetica;
-  font-size: 1.5em;
-  text-align: right;
-  padding: 0 1em;
-  color: #fff6e7;
-}
-
-.hero-link {
-  grid-column: 1/4;
-  grid-row: 3/4;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.4em;
+  padding: 2em;
 }
 
-.hero-link p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.4em;
-  font-weight: bold;
-  text-align: center;
-  padding: 0 1.8em;
-  color: #ffc480;
+.article-one {
+  padding-top: 6em;
+  background: linear-gradient(to bottom, #ef7e1b, #ffffff);
 }
 
-.hero-link button {
+.article-one h1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 1.2em;
-  padding: 0.4em 1em;
-  border: none;
-  outline: none;
-  border-radius: 1em;
-  cursor: pointer;
+  font-size: 5em;
+  text-shadow: -1px -1px 0 #2f2e2d, 1px -1px 0 #2f2e2d, -1px 1px 0 #2f2e2d,
+    1px 1px 0 #2f2e2d;
   color: #fff6e7;
-  text-decoration: underline;
-  background-color: #683514;
 }
 
-.instagram-link {
-  grid-column: 1/4;
-  grid-row: 3/4;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding: 0 1em;
-}
-
-.instagram-title {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  flex: 1;
-
-  font-size: 1em;
+.article-one h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3em;
+  text-align: center;
   color: #683514;
   text-shadow: -1px -1px 0 #fff6e7, 1px -1px 0 #fff6e7, -1px 1px 0 #fff6e7,
     1px 1px 0 #fff6e7;
 }
 
-.instagram-link img {
-  width: 2em;
-  height: 2em;
-}
-
-.instagram-link div {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  background-color: #683514;
-  padding: 0.15em;
-  border-radius: 0.6em;
-}
-
-.instagram-link div p {
+.article-one h3 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 0.7em;
-  color: #fff6e7;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 3em;
 }
 
-.article-three .instagram-link .instagram-title {
-  text-align: right;
+.article-one img {
+  width: 17em;
+}
+
+.article-one img:nth-of-type(2) {
+  width: 21em;
+}
+
+.article-one p {
+  padding-top: 2.6em;
+  font-family: Arial, "Orbitron", Helvetica;
+  text-align: center;
+  font-size: 0.9em;
+  color: #683514;
+}
+
+.article-two {
+  max-width: fit-content;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  padding: 0;
+  padding-top: 5em;
+  align-items: center;
+}
+
+.article-two .article-bg {
+  grid-column: 2/4;
+  grid-row: 1/4;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.article-two div {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.article-two div h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2em;
+  padding-left: 1em;
+}
+
+.article-two div p {
+  padding: 1em 2em;
+  font-family: Arial, "Orbitron", Helvetica;
+  font-size: 0.9em;
+  color: #683514;
+}
+
+.article-two div img {
+  width: 20em;
 }
 
 footer {
